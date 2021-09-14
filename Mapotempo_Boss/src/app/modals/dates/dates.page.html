@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons collapse="true" slot="end">
+      <!-- Event Click, bind from view to source -->
+      <ion-button (click)="dismiss()"> 
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Dates</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item>
+    <ion-label>Du</ion-label>
+    <!-- Binding la propiriété pickerOptions à la source qui est customPickerOptions -->
+    <ion-datetime
+    [pickerOptions]="customPickerOptions"
+    display-timezone="utc" 
+    placeholder="Selectionnez une date"
+    displayFormat="DDD. DD MMM, YYYY" 
+    [dayShortNames]='customDays' 
+    [monthShortNames]="customMonths">
+    </ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Au</ion-label>
+    <ion-datetime 
+    [pickerOptions]="customPickerOptions"
+    display-timezone="utc" 
+    placeholder="Selectionnez une date"
+    displayFormat="DDD. DD MMM, YYYY" 
+    [dayShortNames]='customDays' 
+    [monthShortNames]="customMonths">
+    </ion-datetime>
+  </ion-item>
+
+</ion-content>

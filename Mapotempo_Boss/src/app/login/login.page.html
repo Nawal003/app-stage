@@ -1,0 +1,32 @@
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-img src="assets/logo-mapotempo.png" alt="logo-mapotempo"></ion-img>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form #f="ngForm" (submit)="login(emailCtrl.value, passwordCtrl.value)">
+        <ion-list>
+          <ion-item>
+            <!-- Input with placeholder -->
+            <ion-icon name="mail"></ion-icon>
+            <ion-input placeholder="Email" type="email"  #emailCtrl required></ion-input>
+          </ion-item>
+       
+          <ion-item>
+            <!-- Input with placeholder -->
+            <ion-icon name="lock-closed"></ion-icon>
+            <ion-input placeholder="Mot de passe" type="password"  #passwordCtrl required minlength="6"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-checkbox color="light"></ion-checkbox>
+            <ion-text>Se souvenir de moi</ion-text>
+          </ion-item>
+        </ion-list>
+        <ion-button  fill="solid" expand="block" (click)="login(emailCtrl.value, passwordCtrl.value)" type="submit">Connexion
+        </ion-button>
+      </form>
+    </ion-card-content>
+
+  </ion-card>
+</ion-content>

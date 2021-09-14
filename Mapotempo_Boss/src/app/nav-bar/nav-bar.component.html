@@ -1,0 +1,13 @@
+<ion-toolbar>
+  <ion-button slot="start" size="large" shape="clear" (click)="Home()">
+    <ion-icon color="dark" name="home-outline"></ion-icon>
+  </ion-button>
+  <ion-title>
+    <!-- Interpolation {{moustache}}, intégration des expressions issues du service dans le html/view -->
+    <!-- {{tourneesServ.tournees[0].debut | date:'mediumDate'}} -->
+    {{ date | date:'mediumDate'}}
+  </ion-title>
+  <ion-button size="large" slot="end" shape="clear" (click)="leave()">
+    <ion-icon color="dark" name="exit-outline"></ion-icon>
+  </ion-button>
+</ion-toolbar>

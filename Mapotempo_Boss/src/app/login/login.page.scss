@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ion-content {
+
+  --background: url("/assets/bgd.jpg") no-repeat center/cover;
+
+
+  ion-card {
+    height: 100vh;
+    --background: rgba(255, 255, 255, 0.192);
+
+    ion-card-header {
+      padding: 2em;
+      height: 35vh;
+
+    }
+
+    ion-card-content {
+      padding: 2em;
+
+      ion-list {
+        background: transparent;
+
+        ion-item {
+          --background: rgba(2, 2, 2, 0.144);
+          --border-style: transparent;
+          margin: 1em;
+          border-radius: .3em;
+
+
+          ion-icon {
+            color: white;
+            margin-right: 1em;
+
+
+          }
+
+          ion-input {
+            // border-bottom: solid rgb(255, 255, 255) 1px;
+            --color: rgb(255, 255, 255);
+            --placeholder-font-style: MontserratSimple !important;
+            --placeholder-opacity: .7;
+            font-family: MontserratSimple !important;
+
+          }
+
+          // .show {
+          //   border-bottom: solid rgb(255, 255, 255) 1px;
+          //   height: 43px;
+
+
+          // }
+          ion-label {
+
+            color: white;
+            font-size: 16px;
+            margin-left: 1.2em;
+            font-family: MontserratSimple !important;
+
+
+
+
+          }
+
+          ion-checkbox {
+            --border: none;
+            --background: transparent;
+            --border-color: white;
+            --background-checked: rgb(41, 149, 144);
+            --checkmark-color: white;
+
+
+          }
+
+          ion-text {
+            font-size: 14px;
+            margin-left: 1.2em;
+            color: white;
+            font-family: MontserratSimple !important;
+          }
+
+        }
+      }
+
+
+
+    }
+  }
+
+
+  ion-button {
+    --border-radius: 2em;
+    --background: #13B0CA;
+    height: 8vh;
+    margin: 1em 2em;
+    font-weight: bold;
+
+  }
+
+}
+
+ion-invalid.ion-touched ion-label {
+  color: var(--ion-color-danger);
+}
+
+/** For form invalid field for Angular*/
+input.ng-invalid.ng-touched {
+  border: 1px solid red;
+}

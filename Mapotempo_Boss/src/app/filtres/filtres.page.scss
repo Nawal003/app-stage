@@ -1,0 +1,27 @@
+ion-content {
+
+  ion-item {
+    --background: transparent;
+    --border-style: transparent;
+
+    ion-title {
+      font-family: Montserrat;
+      font-size: max(4vw, 16px);
+      text-align: center;
+
+    }
+
+    
+  }
+  .dashboardBtn {
+
+    ion-chip {
+      ion-label{
+        font-size: max(5vw, 12px);
+      }
+      ion-icon {
+        font-size: max(5vw, 12px);
+      }
+    }
+  }
+}

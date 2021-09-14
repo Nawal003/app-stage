@@ -1,0 +1,34 @@
+@import "../../../theme/variables.scss";
+
+ion-header {
+  ion-toolbar {
+    ion-title {
+      font-family: Montserrat;
+      font-size:max(4vw, 12px);
+    }
+  }
+}
+
+
+ion-item {
+  margin: 1vh 0;
+    --background:transparent;
+    --border-style:transparent;
+  
+
+
+   
+  ion-chip {
+
+    width: 50vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    ion-label{
+      font-family: Montserrat;
+      font-size: max(4vw, 12px);
+    }
+
+
+  }
+}

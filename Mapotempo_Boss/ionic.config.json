@@ -1,0 +1,7 @@
+{
+  "name": "Mapotempo_Boss",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

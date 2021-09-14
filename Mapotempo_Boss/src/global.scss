@@ -1,0 +1,116 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+@import "../src/theme/variables.scss";
+
+@font-face {
+  font-family: 'MontserratBold';
+  src: url('../src/assets/fonts/Montserrat_Subrayada/MontserratSubrayada-Bold.ttf');
+}
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../src/assets/fonts/Montserrat_Subrayada/MontserratSubrayada-Regular.ttf');
+}
+@font-face {
+  font-family: 'MontserratSimple';
+  src: url('../src/assets/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+
+
+
+
+.modal {
+  .modal-wrapper {
+
+    height: 80%;
+    border-radius: 20px;
+  }
+}
+
+.dashboardBtn {
+  --background: transparent;
+  --border-style: transparent;
+
+  ion-chip {
+    width: 25vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .3em;
+    font-size: 5vw;
+    box-shadow: 0 .2em .3em rgba(90, 88, 88, 0.561);
+
+    &:nth-child(1) {
+      background: #DFF0D8;
+      color: #138346;
+
+      ion-icon {
+        margin-bottom: -1em;
+        color: #138346;
+
+      }
+    }
+
+    &:nth-child(2) {
+      background: #D9EDF7;
+      color: #1686C5;
+
+      ion-icon {
+        margin-bottom: -1em;
+        color: #1686C5;
+
+      }
+    }
+
+    &:nth-child(3) {
+      background: #FCF8E3;
+      color: #AA7C05;
+
+      ion-icon {
+        margin-bottom: -1em;
+        color: #AA7C05;
+      }
+    }
+
+    &:nth-child(4) {
+      background: #F2DEDE;
+      color: #BD1D1D;
+
+      ion-icon {
+        margin-bottom: -1em;
+        color: #BD1D1D;
+      }
+    }
+
+    ion-label {
+      margin-top: -1em;
+      font-weight: bold;
+      font-family: MontserratBold !important;
+      
+    }
+  }
+}

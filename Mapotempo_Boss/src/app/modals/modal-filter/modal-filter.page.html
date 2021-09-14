@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button color="primary" slot="end" shape="clear" (click)="dismiss()">
+      Fermer
+
+    </ion-button>
+    <ion-title>Filtrer Par</ion-title>
+  </ion-toolbar>
+  <ion-item>
+    <ion-label color="primary">Effacer</ion-label>
+    <ion-chip>
+      <ion-label>site</ion-label>
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-chip>
+  </ion-item>
+</ion-header>
+<ion-content>
+
+  <ion-item-group>
+    <ion-item button detail (click)="siteModal()">
+      <ion-label>Site(s)</ion-label>
+    </ion-item>
+
+    <ion-item button detail (click)="dateModal()">
+      <ion-label>Dates</ion-label>
+    </ion-item>
+
+    <ion-item button detail (click)="freqModal()">
+      <ion-label>Fréquences</ion-label>
+    </ion-item>
+  </ion-item-group>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <app-nav-bar></app-nav-bar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item-group>
+    <ion-item>
+      <ion-title>{{sitesServ.sites[0].nom}}</ion-title>
+    </ion-item>
+    <ion-item class="dashboardBtn">
+      <ion-chip>
+        <ion-icon name="trail-sign"></ion-icon>
+        <ion-label>1</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-icon name="flag"></ion-icon>
+        <ion-label>2</ion-label>
+      </ion-chip>
+
+      <ion-chip>
+        <ion-icon name="time"></ion-icon>
+        <ion-label>3</ion-label>
+      </ion-chip>
+      <ion-chip>
+        <ion-icon name="warning"></ion-icon>
+        <ion-label>4</ion-label>
+      </ion-chip>
+    </ion-item>
+    <ion-card>
+      <ion-card-content >
+        <canvas #departures style="position: relative; height:30vh; width:80vw"></canvas>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <canvas #missions style="position: relative; height:30vh; width:80vw"></canvas>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-content>
+        <canvas #arrivals style="position: relative; height:0vh; width:80vw"></canvas>
+      </ion-card-content>
+    </ion-card>
+  </ion-item-group>
+</ion-content>
+
+<app-filter-btn></app-filter-btn>

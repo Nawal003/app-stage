@@ -1,0 +1,56 @@
+@import "../../../theme/variables.scss";
+
+ion-header {
+  ion-toolbar {
+    ion-title {
+      font-family: Montserrat;
+      font-size: max(4vw, 16px);
+
+    }
+
+  }
+
+  ion-item {
+    padding: .5em;
+
+    ion-label {
+      font-family: Montserrat;
+      font-size: max(4vw, 12px);
+
+      ion-chip {
+        width: 10vw;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        ion-label {
+          font-family: Montserrat;
+          font-size: max(4vw, 12px);
+        }
+        ion-icon{
+          font-size: max(4vw, 12px);
+        }
+      }
+
+    }
+  }
+
+}
+
+ion-content {
+  ion-item-group {
+    ion-item {
+      margin-top: 1em;
+      // --border-style: grey;
+      box-shadow: 0 .1em 1em rgba(0, 0, 0, 0.37);
+
+      ion-label {
+
+        font-family: Montserrat;
+        font-size: max(4vw, 16px);
+      }
+
+    }
+
+  }
+
+}

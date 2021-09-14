@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sites",
+  "info": {
+    "name": "site",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "sites"
+    },
+    "tournees": {
+      "via": "site",
+      "collection": "tournee"
+    }
+  }
+}

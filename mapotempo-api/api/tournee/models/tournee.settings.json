@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tournees",
+  "info": {
+    "name": "tournee",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "debut": {
+      "type": "date"
+    },
+    "fin": {
+      "type": "date"
+    },
+    "missions": {
+      "via": "tournee",
+      "collection": "mission"
+    },
+    "site": {
+      "via": "tournees",
+      "model": "site"
+    }
+  }
+}

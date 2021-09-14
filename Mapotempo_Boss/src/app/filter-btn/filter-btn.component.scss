@@ -1,0 +1,23 @@
+@import "../../theme/variables.scss";
+
+ion-fab {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+  ion-fab-button {
+    opacity: .7;
+    font-family: Montserrat;
+    font-size: max(4vw, 12px);
+    font-weight: bold;
+    --border-radius: 2em;
+    --background: linear-gradient(#152331, #000000);
+    width: 25vw;
+    height: 5vh;
+    ion-icon{
+      font-size: max(5vw, 12px);
+        margin-right: 2vw;
+    }
+  }
+}

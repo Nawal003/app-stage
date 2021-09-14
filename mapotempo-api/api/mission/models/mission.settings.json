@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "missions",
+  "info": {
+    "name": "mission",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "debut": {
+      "type": "date"
+    },
+    "fin": {
+      "type": "date"
+    },
+    "retard": {
+      "type": "boolean"
+    },
+    "anomalie": {
+      "type": "boolean"
+    },
+    "tournee": {
+      "via": "missions",
+      "model": "tournee"
+    }
+  }
+}
